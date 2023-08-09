@@ -1,0 +1,335 @@
+@import 'utilities.css';
+:root{
+    --primary: #3dcfd3;
+    --dark: #161616;
+    --pure: #ffffff;
+    --ternary: #898989;
+    --light: #f2f2f2;
+}
+body{
+    font-family: 'Eczar', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialiased;
+}
+header{
+    background-color: #B8B8B8;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0% 100%);
+
+
+}
+.container{
+    max-width: 1000px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+}
+header nav .right a{
+    color: #002D62;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+header nav .right a:hover{
+    color: var(--primary);
+
+}
+header nav .logo img{
+    height: 40px;
+}
+header nav{
+    padding: 2rem 0;
+}
+header nav .logo{
+    margin-right: 4rem;
+}
+.Nishant{
+    padding: 3rem 0;
+}
+.Nishant .left img{
+    width: 380px;
+    margin-bottom: -15px;
+
+}
+.Nishant .right{
+    color: var(--pure);
+    margin-top: 4rem;
+    margin-right: 20rem;
+}
+.Nishant .right h3{
+    font-size: 2rem;
+    color: #002D62;
+    margin-bottom: 0.5rem;
+    
+}
+.Nishant .right h1{
+    font-size: 2rem;
+    color: #002D62;
+    margin-bottom: 1.5rem;
+}
+.Nishant .right h1 span{
+    color: #FEBE10;
+}
+.Nishant .right h4{
+    font-size: 2rem;
+    color: var(--dark);
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+
+section{
+    padding: 6rem 0;
+}
+section.about .about_image{
+    height: 450px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 2.6rem;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+}
+section.about h1 span{
+    color: #FF00FF;
+}
+section.about h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: -5;
+}
+section.about h5{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+section.about p{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+section.about .social{
+    display: flex;
+}
+section.about .social a{
+    background: #161616;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: 0.3s;
+}
+section.about .social a:hover{
+    background: var(--pure);
+}
+section.about .social a i:hover{
+    color: #FEBE10;
+}
+section.about .social a i{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+
+.section-heading{
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5rem;
+}
+.section-heading span{
+    color: var(--primary);
+}
+
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Alfa Slab One', cursive;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+section.services{
+    background: var(--light);
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+section.services .card-wrapper .card{
+    background: white;
+    padding: 3rem 2rem;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+    transition: 0.3s;
+}
+section.services .card-wrapper .card:hover{
+    background: var(--dark);
+}
+
+section.services .card-wrapper .card img{
+    height: 7rem;
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card p:hover{
+    color: var(--pure);
+}
+section.services .card-wrapper .card p{
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--ternary);
+    line-height: 1.6rem;
+}
+
+/* Education Card  */
+
+.h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+.education-heading{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.2rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.9rem;
+    margin-top: -3rem;
+}
+.education-heading span{
+    color: var(--primary);
+}
+
+.education-heading + p{
+    color: var(--ternary);
+    font-family: sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+
+}
+section.education{
+    background: linear-gradient(#ddd6f3, #faaca8)
+}
+section.education .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-column-gap: 2rem;
+    grid-row-gap: 6rem; */
+    gap: 2rem;
+}
+section.education .card-wrapper .card{
+    background: white;
+    position: relative;
+    text-align: center;
+    transition: 0.3s;
+    padding: 12px 20px;
+}
+
+section.education .card-wrapper .card img{  
+    padding-right: 47.8rem;
+    height: 8.9rem;
+    position: absolute;
+    top: 0.0rem;
+    transform: translateX(-50%);
+}
+
+/* section.education .card-wrapper .card h1{
+        color: #002D62  ;
+}
+
+section.education .card-wrapper .card h2{
+    color: #161616;
+    font-size: 12px;
+} */
+
+/* Contact US */
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact .card-wrapper .card img{
+    margin-top: 2rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+}
+section.contact input{
+    padding: 0.6rem;
+    border: 1px solid var(--light);
+    font-size: 0.8rem;
+}
+section.contact .input-wrap-2 textarea{
+    padding: 0.6rem;
+    border: 1px solid var(--light);
+    font-size: 0.8rem;
+}
+section.contact input:focus, textarea:focus{
+    outline: none;
+}
+section.contact .btn-wrapper{
+    text-align: center; 
+}
+
+
+footer{
+    background-color: var(--dark);
+    text-align: center;
+    padding: 5rem;
+}
+footer .footer-logo{
+    margin-bottom: 3rem;
+    width: 70px;
+    background: linear-gradient(#ffafbd, #ffc3a0);
+}
+footer .footer-socials a{
+    margin-right: 1rem;
+    color: #f2f2f2;
+
+}
+footer .footer-socials {
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+}
+footer .copyright{
+    color: var(--ternary);
+}
